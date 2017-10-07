@@ -1,5 +1,7 @@
 <template>
 	<div 
+		v-if="ifif"
+		ref="div"
 		v-bind:class="[c1,c2,obj.class]"
 		v-bind:ok="width_" 
 		v-bind:ok1="width_" 
@@ -13,7 +15,10 @@
 		style="font-size:20px" 
 		class="ppp" 
 	>
-		<my_son></my_son>
+		<div>
+			okokok
+		</div>
+		<my_son ref="sonsonson"></my_son>
 
 		<template>
 			<ul v-for="(v,k) in arr" v-bind:key="k">
@@ -28,14 +33,14 @@
 				v-bind:style="{width:width2_,background:bac}"
 				style="line-height:30px" 
 			>
-				<h3 v-for="(v2,k2) in v" v-bind:style="background:bac2">
+				<li v-for="(v2,k2) in v" v-bind:style="background:bac2">
 					{{k2}} = {{v2}}
 					外层 {{width_}}
 
 					<h6 v-for="(v3,k3) in items.b" v-bind:style="background:bac3">
 						{{k3}} = {{v3}}
 					</h6>
-				</h3>
+				</li>
 				<div style="background:red">{{v.name}}是啊</div>
 			</ul>
 		</template>
@@ -58,8 +63,23 @@
 		components:{
 			my_son:'son1'
 		},
+		methods:{
+			click:function( vals , e){
+				error( vals , e)
+			},
+			click2:function( vals ,e ){
+				error( vals ,e)
+			},
+			click3:function(){
+
+			}
+		},
 		data:{
-			arr:[1,2,'3arr',4,5,6],
+			team1:'team11111',
+			team2:'team22222',
+			team3:'team33333',
+			ifif:true,
+			arr:[1,2],
 			do:{
 				key:1
 			},
@@ -145,13 +165,17 @@
 			arr2:[8,9,10,11]
 		},
 		watch:{
-			name:function(){
-				return {}
+			name:function(x){
+
 			}
 		},
 		el:'body',
-		mounted:function () {
+		updated(){
 
+		},
+		mounted:function () {
+			
+			error(this)
 		}
 	}
 
