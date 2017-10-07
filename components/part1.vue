@@ -14,10 +14,12 @@
 		v-bind:style="{width:fff[0].wid,height:height_,background:background}"
 		style="font-size:20px" 
 		class="ppp" 
-	>
-		<div>
-			okokok
-		</div>
+	>	
+		<a href="#main">main</a>
+		<a href="#main2">main2</a>
+
+		<router-view></router-view>
+
 		<my_son ref="sonsonson"></my_son>
 
 		<template>
