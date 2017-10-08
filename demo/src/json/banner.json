@@ -1,0 +1,36 @@
+{
+	"status":0,
+	"data":{
+		"billboards":[
+			{
+			"id":648,
+			"name":"5.1抢影票",
+			"url":"http://m.maizuo.com/act/active/1154",
+			"imageUrl":"https://pic.maizuo.com/h5PicUpload/a8df6800dee20943e7ee629fc4c2c18d.jpg",
+			"weight":2
+			},
+			{
+			"id":649,
+			"name":"X幻想 岛国奇片",
+			"url":"http://cps.maizuo.com/changeUrl.htm?channelId=372&urlId=1501",
+			"imageUrl":"https://pic.maizuo.com/h5PicUpload/4cde9c244f685148f7e839585fd57f5e.jpg",
+			"weight":9
+			},{
+			"id":651,"name":"2017[如果]田馥甄巡回演唱会PLUS",
+			"url":"http://m.maizuo.com/act/active/1135",
+			"imageUrl":"https://pic.maizuo.com/h5PicUpload/c891d3346ecbda99a3370ae5b34026a1.jpg",
+			"weight":1
+			},{
+			"id":655,"name":"春娇救志明","url":"http://m.maizuo.com/act/active/1151",
+			"imageUrl":"https://pic.maizuo.com/h5PicUpload/800476b18771136fd7e2944477e85b08.jpg",
+			"weight":2
+			},{
+			"id":661,"name":"人民的名义主角劲爆料",
+			"url":"http://stxz.baiduux.com/h5/rmdmy.html",
+			"imageUrl":"https://pic.maizuo.com/h5PicUpload/7706a7d46841168c0164558eae7b5ec9.jpg",
+			"weight":1
+			}
+		]
+	},
+	"msg":"ok"
+}

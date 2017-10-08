@@ -1,0 +1,453 @@
+{
+    "status": 0,
+    "data": {
+        "films": [
+            {
+                "id": 3647,
+                "name": "银河护卫队2",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/bb468eeee509991ff8eb585c6897f0c5.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/7e6e6d01c4a22643dae2b1777cab524b.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/7e6e6d01c4a22643dae2b1777cab524b.jpg!150x0"
+                },
+                "intro": "星爵身世迷 终于见爹地",
+                "premiereAt": 1493913600000,
+                "grade": "8.5",
+                "watchCount": 12257,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": true,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3488,
+                "name": "咸鱼传奇",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003488/2a84229ae00707143b6a55bf4b201eea.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003488/1bb2435fbef875786c2b1397d533f8a8.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003488/1bb2435fbef875786c2b1397d533f8a8.jpg!150x0"
+                },
+                "intro": "咸鱼也有梦 跨越千年追",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3648,
+                "name": "海阔天空",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/5e7b5238bb39ec2328d7aeb16cec0898.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/e01fded12252b763676ab0bf40b267fa.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/e01fded12252b763676ab0bf40b267fa.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3663,
+                "name": "摔跤吧！爸爸",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/50fee00488817e1acda5fad62ef66456.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0478e393c2b69bd4b97666854af44263.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/0478e393c2b69bd4b97666854af44263.jpg!150x0"
+                },
+                "intro": "为圆摔跤梦 女儿不心疼",
+                "premiereAt": 1493913600000,
+                "grade": "9.0",
+                "watchCount": 2502,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3672,
+                "name": "黑白照相馆",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/12e89451f7b20677cff235a39dd7d255.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/881e3465b398834feab9b69f35f045cf.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/881e3465b398834feab9b69f35f045cf.jpg!150x0"
+                },
+                "intro": "神秘照相馆 空间会逆变",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3670,
+                "name": "妖精的尾巴剧场版：龙泣",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/dfc9289813541e835501f8ec17476e8b.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/100ce6d22f79340a158da87983645ddd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/100ce6d22f79340a158da87983645ddd.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1494000000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3674,
+                "name": "凤凰街风雨",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a6bb5693b62af9eb304be6ccc1153746.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0e26ceb2e45f236343e14ef51f715da2.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/0e26ceb2e45f236343e14ef51f715da2.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1494259200000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3647,
+                "name": "银河护卫队2",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/bb468eeee509991ff8eb585c6897f0c5.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/7e6e6d01c4a22643dae2b1777cab524b.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/7e6e6d01c4a22643dae2b1777cab524b.jpg!150x0"
+                },
+                "intro": "星爵身世迷 终于见爹地",
+                "premiereAt": 1493913600000,
+                "grade": "8.5",
+                "watchCount": 12257,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": true,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3488,
+                "name": "咸鱼传奇",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003488/2a84229ae00707143b6a55bf4b201eea.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003488/1bb2435fbef875786c2b1397d533f8a8.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003488/1bb2435fbef875786c2b1397d533f8a8.jpg!150x0"
+                },
+                "intro": "咸鱼也有梦 跨越千年追",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3648,
+                "name": "海阔天空",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/5e7b5238bb39ec2328d7aeb16cec0898.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/e01fded12252b763676ab0bf40b267fa.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/e01fded12252b763676ab0bf40b267fa.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3663,
+                "name": "摔跤吧！爸爸",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/50fee00488817e1acda5fad62ef66456.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0478e393c2b69bd4b97666854af44263.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/0478e393c2b69bd4b97666854af44263.jpg!150x0"
+                },
+                "intro": "为圆摔跤梦 女儿不心疼",
+                "premiereAt": 1493913600000,
+                "grade": "9.0",
+                "watchCount": 2502,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3672,
+                "name": "黑白照相馆",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/12e89451f7b20677cff235a39dd7d255.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/881e3465b398834feab9b69f35f045cf.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/881e3465b398834feab9b69f35f045cf.jpg!150x0"
+                },
+                "intro": "神秘照相馆 空间会逆变",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3670,
+                "name": "妖精的尾巴剧场版：龙泣",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/dfc9289813541e835501f8ec17476e8b.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/100ce6d22f79340a158da87983645ddd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/100ce6d22f79340a158da87983645ddd.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1494000000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3674,
+                "name": "凤凰街风雨",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a6bb5693b62af9eb304be6ccc1153746.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0e26ceb2e45f236343e14ef51f715da2.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/0e26ceb2e45f236343e14ef51f715da2.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1494259200000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3647,
+                "name": "银河护卫队2",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/bb468eeee509991ff8eb585c6897f0c5.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/7e6e6d01c4a22643dae2b1777cab524b.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/7e6e6d01c4a22643dae2b1777cab524b.jpg!150x0"
+                },
+                "intro": "星爵身世迷 终于见爹地",
+                "premiereAt": 1493913600000,
+                "grade": "8.5",
+                "watchCount": 12257,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": true,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3488,
+                "name": "咸鱼传奇",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003488/2a84229ae00707143b6a55bf4b201eea.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003488/1bb2435fbef875786c2b1397d533f8a8.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003488/1bb2435fbef875786c2b1397d533f8a8.jpg!150x0"
+                },
+                "intro": "咸鱼也有梦 跨越千年追",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3648,
+                "name": "海阔天空",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/5e7b5238bb39ec2328d7aeb16cec0898.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/e01fded12252b763676ab0bf40b267fa.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/e01fded12252b763676ab0bf40b267fa.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3663,
+                "name": "摔跤吧！爸爸",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/50fee00488817e1acda5fad62ef66456.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0478e393c2b69bd4b97666854af44263.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/0478e393c2b69bd4b97666854af44263.jpg!150x0"
+                },
+                "intro": "为圆摔跤梦 女儿不心疼",
+                "premiereAt": 1493913600000,
+                "grade": "9.0",
+                "watchCount": 2502,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3672,
+                "name": "黑白照相馆",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/12e89451f7b20677cff235a39dd7d255.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/881e3465b398834feab9b69f35f045cf.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/881e3465b398834feab9b69f35f045cf.jpg!150x0"
+                },
+                "intro": "神秘照相馆 空间会逆变",
+                "premiereAt": 1493913600000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3670,
+                "name": "妖精的尾巴剧场版：龙泣",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/dfc9289813541e835501f8ec17476e8b.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/100ce6d22f79340a158da87983645ddd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/100ce6d22f79340a158da87983645ddd.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1494000000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3674,
+                "name": "凤凰街风雨",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a6bb5693b62af9eb304be6ccc1153746.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0e26ceb2e45f236343e14ef51f715da2.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/0e26ceb2e45f236343e14ef51f715da2.jpg!150x0"
+                },
+                "intro": "",
+                "premiereAt": 1494259200000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            }
+        ],
+        "page": {
+            "total": 14,
+            "current": 1
+        }
+    },
+    "msg": "ok"
+}

@@ -1,0 +1,453 @@
+{
+    "status": 0,
+    "data": {
+        "films": [
+            {
+                "id": 3532,
+                "name": "麻烦家族",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003532/8655df340ae54e9471f10356c9ddc765.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a5cac98679a3903768f69a6996881ffb.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/a5cac98679a3903768f69a6996881ffb.jpg!150x0"
+                },
+                "intro": "晚年大危机 生日要分离",
+                "premiereAt": 1494432000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3659,
+                "name": "六人晚餐",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/4bf3b352fd60d3eb3b40e42b36875d85.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/df8c81bde180b08474de6b2abbfea03e.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/df8c81bde180b08474de6b2abbfea03e.jpg!150x0"
+                },
+                "intro": "刺痛青春 向爱而生",
+                "premiereAt": 1494432000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3565,
+                "name": "碟仙前传",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003565/ed2a2302842e7cdaf1e0437ffc43843f.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/cd0c50a9ba38808a921ffd9e23a4606b.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/cd0c50a9ba38808a921ffd9e23a4606b.jpg!150x0"
+                },
+                "intro": "不作不会死 远离碟仙戏",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3603,
+                "name": "诡宅",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003603/b18a4e450222dcd75b5a7090b0980410.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003603/d0ca107873fffaaeb161ce019be377bd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003603/d0ca107873fffaaeb161ce019be377bd.jpg!150x0"
+                },
+                "intro": "乡下去养胎 不料入鬼宅",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3622,
+                "name": "提着心，吊着胆",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/63607d8e5b8a14aaf1d0a6c048894934.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/600bae63775dfc9792ae3c341d367aa5.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/600bae63775dfc9792ae3c341d367aa5.jpg!150x0"
+                },
+                "intro": "疑妻在出轨 犯下杀手罪",
+                "premiereAt": 1494518400000,
+                "grade": "7.5",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3649,
+                "name": "亚瑟王：斗兽争霸",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/c0c70db2a95f929863720f03c6b7ec1b.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/08feeebc46a6b81bf57ee1e348147ebc.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/08feeebc46a6b81bf57ee1e348147ebc.jpg!150x0"
+                },
+                "intro": "从一无所有 到圣剑在手",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3652,
+                "name": "超凡战队",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/addb0a27c06216fc3984b4b21572c849.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/3915cc3aa36a24ceda5b00be4be9de66.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/3915cc3aa36a24ceda5b00be4be9de66.jpg!150x0"
+                },
+                "intro": "少年齐合体 打击恶势力",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3532,
+                "name": "麻烦家族",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003532/8655df340ae54e9471f10356c9ddc765.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a5cac98679a3903768f69a6996881ffb.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/a5cac98679a3903768f69a6996881ffb.jpg!150x0"
+                },
+                "intro": "晚年大危机 生日要分离",
+                "premiereAt": 1494432000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3659,
+                "name": "六人晚餐",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/4bf3b352fd60d3eb3b40e42b36875d85.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/df8c81bde180b08474de6b2abbfea03e.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/df8c81bde180b08474de6b2abbfea03e.jpg!150x0"
+                },
+                "intro": "刺痛青春 向爱而生",
+                "premiereAt": 1494432000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3565,
+                "name": "碟仙前传",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003565/ed2a2302842e7cdaf1e0437ffc43843f.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/cd0c50a9ba38808a921ffd9e23a4606b.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/cd0c50a9ba38808a921ffd9e23a4606b.jpg!150x0"
+                },
+                "intro": "不作不会死 远离碟仙戏",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3603,
+                "name": "诡宅",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003603/b18a4e450222dcd75b5a7090b0980410.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003603/d0ca107873fffaaeb161ce019be377bd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003603/d0ca107873fffaaeb161ce019be377bd.jpg!150x0"
+                },
+                "intro": "乡下去养胎 不料入鬼宅",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3622,
+                "name": "提着心，吊着胆",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/63607d8e5b8a14aaf1d0a6c048894934.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/600bae63775dfc9792ae3c341d367aa5.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/600bae63775dfc9792ae3c341d367aa5.jpg!150x0"
+                },
+                "intro": "疑妻在出轨 犯下杀手罪",
+                "premiereAt": 1494518400000,
+                "grade": "7.5",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3649,
+                "name": "亚瑟王：斗兽争霸",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/c0c70db2a95f929863720f03c6b7ec1b.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/08feeebc46a6b81bf57ee1e348147ebc.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/08feeebc46a6b81bf57ee1e348147ebc.jpg!150x0"
+                },
+                "intro": "从一无所有 到圣剑在手",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3652,
+                "name": "超凡战队",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/addb0a27c06216fc3984b4b21572c849.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/3915cc3aa36a24ceda5b00be4be9de66.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/3915cc3aa36a24ceda5b00be4be9de66.jpg!150x0"
+                },
+                "intro": "少年齐合体 打击恶势力",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3532,
+                "name": "麻烦家族",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003532/8655df340ae54e9471f10356c9ddc765.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a5cac98679a3903768f69a6996881ffb.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/a5cac98679a3903768f69a6996881ffb.jpg!150x0"
+                },
+                "intro": "晚年大危机 生日要分离",
+                "premiereAt": 1494432000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3659,
+                "name": "六人晚餐",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/4bf3b352fd60d3eb3b40e42b36875d85.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/df8c81bde180b08474de6b2abbfea03e.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/df8c81bde180b08474de6b2abbfea03e.jpg!150x0"
+                },
+                "intro": "刺痛青春 向爱而生",
+                "premiereAt": 1494432000000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3565,
+                "name": "碟仙前传",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003565/ed2a2302842e7cdaf1e0437ffc43843f.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/cd0c50a9ba38808a921ffd9e23a4606b.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/cd0c50a9ba38808a921ffd9e23a4606b.jpg!150x0"
+                },
+                "intro": "不作不会死 远离碟仙戏",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3603,
+                "name": "诡宅",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003603/b18a4e450222dcd75b5a7090b0980410.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003603/d0ca107873fffaaeb161ce019be377bd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003603/d0ca107873fffaaeb161ce019be377bd.jpg!150x0"
+                },
+                "intro": "乡下去养胎 不料入鬼宅",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3622,
+                "name": "提着心，吊着胆",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/63607d8e5b8a14aaf1d0a6c048894934.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/600bae63775dfc9792ae3c341d367aa5.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/600bae63775dfc9792ae3c341d367aa5.jpg!150x0"
+                },
+                "intro": "疑妻在出轨 犯下杀手罪",
+                "premiereAt": 1494518400000,
+                "grade": "7.5",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3649,
+                "name": "亚瑟王：斗兽争霸",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/c0c70db2a95f929863720f03c6b7ec1b.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/08feeebc46a6b81bf57ee1e348147ebc.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/08feeebc46a6b81bf57ee1e348147ebc.jpg!150x0"
+                },
+                "intro": "从一无所有 到圣剑在手",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            },
+            {
+                "id": 3652,
+                "name": "超凡战队",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/addb0a27c06216fc3984b4b21572c849.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/3915cc3aa36a24ceda5b00be4be9de66.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/3915cc3aa36a24ceda5b00be4be9de66.jpg!150x0"
+                },
+                "intro": "少年齐合体 打击恶势力",
+                "premiereAt": 1494518400000,
+                "grade": "8.0",
+                "watchCount": 0,
+                "cinemaCount": 0,
+                "scheduleCount": 0,
+                "isPromotion": false,
+                "isNowPlaying": "",
+                "isComingSoon": true,
+                "isPresold": ""
+            }
+        ],
+        "page": {
+            "total": 14,
+            "current": 2
+        }
+    },
+    "msg": "ok"
+}

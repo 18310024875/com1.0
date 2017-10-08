@@ -1,0 +1,453 @@
+{
+    "status": 0,
+    "data": {
+        "films": [
+            {
+                "id": 3624,
+                "name": "傲娇与偏见",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/72daa61be526be7aaa0744a6edfc4a31.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/311a9082437bf375cf1beccf4ed722a4.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/311a9082437bf375cf1beccf4ed722a4.jpg!150x0"
+                },
+                "intro": "落难富二代 从小被惯坏",
+                "premiereAt": 1492617600000,
+                "grade": "8.4",
+                "watchCount": 93727,
+                "cinemaCount": 30,
+                "scheduleCount": 170,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 1976,
+                "name": "大话西游之大圣娶亲",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0966d64714804be356427f88c35cc088.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/381a1fe7f9742c35a7bbf6296e9c50bd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/381a1fe7f9742c35a7bbf6296e9c50bd.jpg!150x0"
+                },
+                "intro": "一生所爱 此情无憾",
+                "premiereAt": 1492012800000,
+                "grade": "9.5",
+                "watchCount": 179441,
+                "cinemaCount": 16,
+                "scheduleCount": 43,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3378,
+                "name": "嫌疑人X的献身",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/c2d6768dcd4f2c35f8be66805bb20396.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/83fe91fad3e5456330fb71cdf2ab13af.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/83fe91fad3e5456330fb71cdf2ab13af.jpg!150x0"
+                },
+                "intro": "天才谋杀案 诡计造谜团",
+                "premiereAt": 1490889600000,
+                "grade": "8.4",
+                "watchCount": 635406,
+                "cinemaCount": 2,
+                "scheduleCount": 5,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3601,
+                "name": "金刚：骷髅岛",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003601/b77973ee3a12e6a1010509ece2f94743.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003601/9c53f31bbb9690662c815ca0265f1c1e.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003601/9c53f31bbb9690662c815ca0265f1c1e.jpg!150x0"
+                },
+                "intro": "人类新大陆 金刚快跑路",
+                "premiereAt": 1490284800000,
+                "grade": "8.4",
+                "watchCount": 1537676,
+                "cinemaCount": 2,
+                "scheduleCount": 5,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3580,
+                "name": "有完没完",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a9213828bebc27a2cc64b4dc8a3331e9.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/dcf24d86cdbd8449dd772f436b736605.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/dcf24d86cdbd8449dd772f436b736605.jpg!150x0"
+                },
+                "intro": "中年遇危机 困境寻真谛",
+                "premiereAt": 1490976000000,
+                "grade": "8.0",
+                "watchCount": 27372,
+                "cinemaCount": 1,
+                "scheduleCount": 2,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3523,
+                "name": "非凡任务",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/523de0d1169a7f1cccaf97acb97e7468.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/52f246d120ba07511c1cdaaa75de5750.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/52f246d120ba07511c1cdaaa75de5750.jpg!150x0"
+                },
+                "intro": "潜入贩毒团 卧底破大案",
+                "premiereAt": 1490889600000,
+                "grade": "8.3",
+                "watchCount": 192614,
+                "cinemaCount": 1,
+                "scheduleCount": 1,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3550,
+                "name": "绑架者",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/05371af94f10dbdefd464396ff1742e8.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/83787b296b499019241d3b2b76687682.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/83787b296b499019241d3b2b76687682.jpg!150x0"
+                },
+                "intro": "女儿失踪迹 嫌犯失记忆",
+                "premiereAt": 1490889600000,
+                "grade": "8.4",
+                "watchCount": 103655,
+                "cinemaCount": 1,
+                "scheduleCount": 1,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3624,
+                "name": "傲娇与偏见",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/72daa61be526be7aaa0744a6edfc4a31.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/311a9082437bf375cf1beccf4ed722a4.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/311a9082437bf375cf1beccf4ed722a4.jpg!150x0"
+                },
+                "intro": "落难富二代 从小被惯坏",
+                "premiereAt": 1492617600000,
+                "grade": "8.4",
+                "watchCount": 93727,
+                "cinemaCount": 30,
+                "scheduleCount": 170,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 1976,
+                "name": "大话西游之大圣娶亲",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0966d64714804be356427f88c35cc088.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/381a1fe7f9742c35a7bbf6296e9c50bd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/381a1fe7f9742c35a7bbf6296e9c50bd.jpg!150x0"
+                },
+                "intro": "一生所爱 此情无憾",
+                "premiereAt": 1492012800000,
+                "grade": "9.5",
+                "watchCount": 179441,
+                "cinemaCount": 16,
+                "scheduleCount": 43,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3378,
+                "name": "嫌疑人X的献身",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/c2d6768dcd4f2c35f8be66805bb20396.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/83fe91fad3e5456330fb71cdf2ab13af.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/83fe91fad3e5456330fb71cdf2ab13af.jpg!150x0"
+                },
+                "intro": "天才谋杀案 诡计造谜团",
+                "premiereAt": 1490889600000,
+                "grade": "8.4",
+                "watchCount": 635406,
+                "cinemaCount": 2,
+                "scheduleCount": 5,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3601,
+                "name": "金刚：骷髅岛",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003601/b77973ee3a12e6a1010509ece2f94743.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003601/9c53f31bbb9690662c815ca0265f1c1e.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003601/9c53f31bbb9690662c815ca0265f1c1e.jpg!150x0"
+                },
+                "intro": "人类新大陆 金刚快跑路",
+                "premiereAt": 1490284800000,
+                "grade": "8.4",
+                "watchCount": 1537676,
+                "cinemaCount": 2,
+                "scheduleCount": 5,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3580,
+                "name": "有完没完",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a9213828bebc27a2cc64b4dc8a3331e9.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/dcf24d86cdbd8449dd772f436b736605.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/dcf24d86cdbd8449dd772f436b736605.jpg!150x0"
+                },
+                "intro": "中年遇危机 困境寻真谛",
+                "premiereAt": 1490976000000,
+                "grade": "8.0",
+                "watchCount": 27372,
+                "cinemaCount": 1,
+                "scheduleCount": 2,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3523,
+                "name": "非凡任务",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/523de0d1169a7f1cccaf97acb97e7468.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/52f246d120ba07511c1cdaaa75de5750.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/52f246d120ba07511c1cdaaa75de5750.jpg!150x0"
+                },
+                "intro": "潜入贩毒团 卧底破大案",
+                "premiereAt": 1490889600000,
+                "grade": "8.3",
+                "watchCount": 192614,
+                "cinemaCount": 1,
+                "scheduleCount": 1,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3550,
+                "name": "绑架者",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/05371af94f10dbdefd464396ff1742e8.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/83787b296b499019241d3b2b76687682.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/83787b296b499019241d3b2b76687682.jpg!150x0"
+                },
+                "intro": "女儿失踪迹 嫌犯失记忆",
+                "premiereAt": 1490889600000,
+                "grade": "8.4",
+                "watchCount": 103655,
+                "cinemaCount": 1,
+                "scheduleCount": 1,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3624,
+                "name": "傲娇与偏见",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/72daa61be526be7aaa0744a6edfc4a31.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/311a9082437bf375cf1beccf4ed722a4.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/311a9082437bf375cf1beccf4ed722a4.jpg!150x0"
+                },
+                "intro": "落难富二代 从小被惯坏",
+                "premiereAt": 1492617600000,
+                "grade": "8.4",
+                "watchCount": 93727,
+                "cinemaCount": 30,
+                "scheduleCount": 170,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 1976,
+                "name": "大话西游之大圣娶亲",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/0966d64714804be356427f88c35cc088.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/381a1fe7f9742c35a7bbf6296e9c50bd.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/381a1fe7f9742c35a7bbf6296e9c50bd.jpg!150x0"
+                },
+                "intro": "一生所爱 此情无憾",
+                "premiereAt": 1492012800000,
+                "grade": "9.5",
+                "watchCount": 179441,
+                "cinemaCount": 16,
+                "scheduleCount": 43,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3378,
+                "name": "嫌疑人X的献身",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/c2d6768dcd4f2c35f8be66805bb20396.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/83fe91fad3e5456330fb71cdf2ab13af.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/83fe91fad3e5456330fb71cdf2ab13af.jpg!150x0"
+                },
+                "intro": "天才谋杀案 诡计造谜团",
+                "premiereAt": 1490889600000,
+                "grade": "8.4",
+                "watchCount": 635406,
+                "cinemaCount": 2,
+                "scheduleCount": 5,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3601,
+                "name": "金刚：骷髅岛",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/100003601/b77973ee3a12e6a1010509ece2f94743.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/100003601/9c53f31bbb9690662c815ca0265f1c1e.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/100003601/9c53f31bbb9690662c815ca0265f1c1e.jpg!150x0"
+                },
+                "intro": "人类新大陆 金刚快跑路",
+                "premiereAt": 1490284800000,
+                "grade": "8.4",
+                "watchCount": 1537676,
+                "cinemaCount": 2,
+                "scheduleCount": 5,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3580,
+                "name": "有完没完",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/a9213828bebc27a2cc64b4dc8a3331e9.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/dcf24d86cdbd8449dd772f436b736605.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/dcf24d86cdbd8449dd772f436b736605.jpg!150x0"
+                },
+                "intro": "中年遇危机 困境寻真谛",
+                "premiereAt": 1490976000000,
+                "grade": "8.0",
+                "watchCount": 27372,
+                "cinemaCount": 1,
+                "scheduleCount": 2,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3523,
+                "name": "非凡任务",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/523de0d1169a7f1cccaf97acb97e7468.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/52f246d120ba07511c1cdaaa75de5750.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/52f246d120ba07511c1cdaaa75de5750.jpg!150x0"
+                },
+                "intro": "潜入贩毒团 卧底破大案",
+                "premiereAt": 1490889600000,
+                "grade": "8.3",
+                "watchCount": 192614,
+                "cinemaCount": 1,
+                "scheduleCount": 1,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            },
+            {
+                "id": 3550,
+                "name": "绑架者",
+                "cover": {
+                    "origin": "https://pic.maizuo.com/usr/movie/05371af94f10dbdefd464396ff1742e8.jpg"
+                },
+                "poster": {
+                    "origin": "https://pic.maizuo.com/usr/movie/83787b296b499019241d3b2b76687682.jpg",
+                    "thumbnail": "https://pic.maizuo.com/usr/movie/83787b296b499019241d3b2b76687682.jpg!150x0"
+                },
+                "intro": "女儿失踪迹 嫌犯失记忆",
+                "premiereAt": 1490889600000,
+                "grade": "8.4",
+                "watchCount": 103655,
+                "cinemaCount": 1,
+                "scheduleCount": 1,
+                "isPromotion": true,
+                "isNowPlaying": true,
+                "isComingSoon": "",
+                "isPresold": ""
+            }
+        ],
+        "page": {
+            "total": 5,
+            "current": 2
+        }
+    },
+    "msg": "ok"
+}
