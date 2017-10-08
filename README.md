@@ -23,6 +23,7 @@ v-for 必须是 (item , index) in items ; 不支持 item in items ;
 	
 }
 
+
 <style scoped="#someId"> ... </style>
 在解析 css时候 会把所有样式前 添加scoped内的前缀 可以实现css模块化 ;
 
