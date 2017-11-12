@@ -15,6 +15,9 @@
 		}
 
 		var tpl = options.template ;
+			// 换行会对 match 造成影响 先去换行 ;
+			tpl = tpl.replace(/\r/g,'') ;
+			tpl = tpl.replace(/\n/g,'') ; 
 		new_options = template.readTPL( tpl , options );
 		return new Component( new_options ) ;
 	};

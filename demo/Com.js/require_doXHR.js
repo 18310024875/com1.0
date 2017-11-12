@@ -97,7 +97,7 @@
 
 			// 3 截取 tpl ( 必须有 )
 			var tpl = xhr.match(/<template.*?>(.*)<\/template>/)[1] ;   
-				tpl = tpl.replace(/__换行__/g,'')
+				tpl = tpl.replace(/__换行__/g,'');
 
 				// 处理 template 和 导出对象 ;
 				template.readTPL( 
