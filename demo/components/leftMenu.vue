@@ -17,7 +17,57 @@
 		</ul>
 	</div>
 </template>
-
+<style scoped="#leftMenu">
+	#mask {
+	  position: fixed;
+	  z-index: 100;
+	  top: 1rem;
+	  bottom: 0;
+	  left: 0;
+	  right: 0;
+	  background: rgba(0, 0, 0, 0.5);
+	  transition: all 0.2s ease-in-out;
+	}
+	#menu {
+	  position: fixed;
+	  z-index: 101;
+	  top: 1rem;
+	  bottom: 0;
+	  width: 65%;
+	  background: #282828;
+	  transition: all 0.4s ease-in-out;
+	}
+	#menu li {
+	  display: block;
+	  width: 100%;
+	  border-bottom: 1px dotted #333;
+	  height: 1rem;
+	  line-height: 1rem;
+	  color: #999;
+	  font-size: .28rem;
+	}
+	#menu li:nth-of-type(1){
+	  border-top: 1px solid #333;
+	}
+	#menu li a {
+	  display: block;
+	  padding: 0 .33rem;
+	  color: #999;
+	}
+	#menu li a .rt {
+	  height: 100%;
+	  float: right;
+	}
+	#menu li a .rt span {
+	  width: 7px;
+	  height: 7px;
+	  display: inline-block;
+	  border: 1px solid #999;
+	  transform: rotate(45deg);
+	  border-left: none;
+	  border-bottom: none;
+	}
+</style>
 
 <script>
 
@@ -86,7 +136,9 @@
 				bus.header.setHeaderName(name)
 				
 				if( location.hash!=link ){
-					location.hash = link ;
+					setTimeout(function(){
+						location.hash = link ;
+					},300);
 				}
 			}
 		},

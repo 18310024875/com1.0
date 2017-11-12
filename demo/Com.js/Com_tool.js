@@ -1,13 +1,26 @@
-
-window.log = console.log ;
-window.error = console.error ;
-window.warn = console.warn ;
-
 (function(){
 
-	// 全局
-	window.Com = {} ;
+		window.log = console.log ;
+		window.error = console.error ;
+		window.warn = console.warn ;
 
+	// 全局 Com 对象 ;
+	window.Com = function( options ){
+		return new Component(options);
+	};
+	// 2017 11 13 组件可在js中创建 ;
+	Com.make = function( options ){
+		if( !options.template || typeof options.template !='string' ){
+			alert('组件template不合法');
+		}
+
+		var tpl = options.template ;
+		new_options = template.readTPL( tpl , options );
+		return new Component( new_options ) ;
+	};
+
+
+	// 唯一id ;
 	var only_index =  Date.parse(new Date()); 
 
 	// 工具对象
@@ -31,12 +44,9 @@ window.warn = console.warn ;
 			else if(type=='object'){ // 对象 数组 ;
 				if( tree instanceof Array){
 					// 数组
-					var arr = [] ;
-					tree.map(function( v ){
-						val = tool.deepClone( v )
-						arr.push(val)
+					return_ = tree.map(function( v ){
+						return tool.deepClone( v )
 					})
-					return_ = arr ;
 				}else{
 					//对象
 					var obj = {} ;
@@ -59,35 +69,6 @@ window.warn = console.warn ;
 			return return_ ;
 		},
 
-		// 收集事件 统一出发 ;
-		// Emitter:Emitter,
-
-	}
-
-	function Emitter () {
-		this.its = [] ;
-		this.cbs = [] ;
-		this.vals = [] ;
-	}
-	Emitter.prototype.add=function( it , cb , val ){
-		this.its.push(it)   ;
-		this.cbs.push(cb)   ;
-		this.vals.push(val) ;
-	}
-	Emitter.prototype.doAll=function(){
-
-	   for( var i=0,j=cbs.length ; i<j ; i++ ){
-	   		if( !its[i] ){
-	   			continue
-	   		};
-			var it  = its[i]  ;
-			var val = vals[i] ;
-
-			eval( "it"+cbs[i]+"(val)" ) ;
-		}
-		its.length  = 0 ;
-		cbs.length  = 0 ;
-		vals.length = 0 ;
 	}
 
 }())

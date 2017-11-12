@@ -9,7 +9,7 @@
 	<title> 卖座电影 Com.js</title>	
 
 	<link rel="stylesheet" type="text/css" href="./src/css/swiper.css">
-	<link rel="stylesheet" type="text/css" href="./src/css/public.css">
+	<!-- 全局css -->
 	<link rel="stylesheet" type="text/css" href="./src/css/app.css">
 </head>
 
@@ -23,128 +23,14 @@
 
 <!-- 框架 -->
 <script type="text/javascript" src="./Com.js/jquery.js"></script>
-<script type="text/javascript" src="./Com.js/tool.js"></script>
+<script type="text/javascript" src="./Com.js/component.js"></script>  
+<script type="text/javascript" src="./Com.js/Com_tool.js"></script>
 <script type="text/javascript" src="./Com.js/template.js"></script>
 <script type="text/javascript" src="./Com.js/doVFOR.js"></script>
 <script type="text/javascript" src="./Com.js/require_doXHR.js"></script>
-<script type="text/javascript" src="./Com.js/component.js"></script>
 <script type="text/javascript" src="./Com.js/comRouter.js"></script>
 
 <!-- 配置项 和 路由 -->
 <script type="text/javascript" src="./com.config.js"></script>
-<script type="text/javascript">
 
-
-	function replaceResKey2( resolution , data_key , ){
-
-		var hasForKey = false ;
-		var forKey ;
-
-		log(data_key,resolution)
-
-		// if(/['"]/.test(data_key)){
-		// 	error(' v-for语法不支持"或\' 变量请用[key] 常量请用.key ' , data_key)
-		// }
-		var arr = data_key.match(/\[(.*?)\]/g) ;
-		// 存在[ ;
-		if(arr){
-			arr.map(function(each){
-				var pass = false ;
-				each = each.match(/\[(.*)\]/)[1]; 
-				log(each) ;
-				if( /['"]/.test(each) || isNaN( Number(each) )==false ){
-					pass = true ;
-				}
-				var it ;
-
-				// []中 存在.
-				if( /\./.test(each) ){
-					it = each.split('.')[0] ;
-				}
-				// []中不存在.
-				else{
-					it = each ;
-				}
-				// 如果作用域中存在
-				var val = resolution[it] ;
-				if( val ){
-					var repIt ;
-					// v-for 的 key 特殊处理 ;
-					if( val.indexOf('#')!=-1 ){
-						val = val.split('#')[1] ; 
-						// hasForKey = true ;
-						repIt = '['+val ;
-					}else{
-						repIt = '[Data.'+val ;
-					}
-
-					data_key = eval( 'data_key.replace(/\\['+it+'/,\''+repIt+'\')') ;
-				}
-				// 作用域不存在 ; 需要加上Data前缀 ;
-				else{
-					// 静态属性 ;
-					if(pass){
-						debugger
-						var repIt = '['+it ;
-					}
-					// 动态属性
-					else{
-						var repIt = '[Data.'+it ;
-					}
-					data_key = eval( 'data_key.replace(/\\['+it+'/,\''+repIt+'\')') ;
-				};
-			})
-		}
-		// 不存在[
-		else{
-			(function(){
-				var each = data_key ;
-				var it ;
-				var has_dot = false ;
-				var has_for_key = false ;
-				// 存在.
-				if( /\./.test(each) ){
-					it = each.split('.')[0] ;
-					has_dot = true ;
-				}
-				// 不存在.
-				else{
-					it = each ;
-				}
-
-				// 如果作用域中存在
-				var val = resolution[it] ;
-				if( val ){
-					var repIt ;
-					// v-for 的 key 特殊处理 ;
-					if( val.indexOf('#')!=-1 ){
-						val = val.split('#')[1];
-						has_for_key = true ;
-					}
-					if(has_dot){
-						repIt = val+'.';
-						data_key = eval( 'data_key.replace(/'+it+'\\./,\''+repIt+'\')') ;
-					}else{
-						repIt = val ;
-						data_key = eval( 'data_key.replace(/'+it+'/,\''+repIt+'\')') ;
-						// ** 直接输出key
-						if( has_for_key ){
-							hasForKey = true ;
-							forKey = eval( 'data_key.replace(/'+it+'/,\''+repIt+'\')');
-						}
-					}
-				};
-			}())
-		}
-
-error(data_key)
-		return {
-			data_key:data_key , 
-			hasForKey:hasForKey,
-			forKey:forKey
-		};
-	}
-
-
-</script>
 </html>

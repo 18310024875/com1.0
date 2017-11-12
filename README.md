@@ -1,6 +1,6 @@
 服务器打开index.html ;
 
-标签必须要有结尾标签呀!!!!!!!!!!!!!!!!!!!!!!!!!!! <img src="" />
+标签必须要有结尾标签呀!!!!!!!!!!!!!!!!!!!!!!!!!!! <!-- <img src="" /> -->
 v-for 必须是 (item , index) in items ; 不支持 item in items ;
 
 
@@ -9,7 +9,7 @@ v-for 必须是 (item , index) in items ; 不支持 item in items ;
 路由暂时不支持嵌套 ;
 
 {{}}内不能做判断 ;
-所有绑定的data 都是静态的 不能像Vue一样 不支持!例如: <div v-for="(v,k) in items" ref="'key_'+k"></div> ; 
+所有绑定的data 都是静态的 不能像Vue一样 不支持!例如: <!-- <div v-for="(v,k) in items" ref="'key_'+k"></div> ;  -->
 !!! 这种语法会报错---- 想使用需要在绑定之前构造 添加新属性才行 ;
 
 
@@ -24,10 +24,10 @@ v-for 必须是 (item , index) in items ; 不支持 item in items ;
 }
 
 
-<style scoped="#someId"> ... </style>
+<!-- <style scoped="#someId"> ... </style> -->
 在解析 css时候 会把所有样式前 添加scoped内的前缀 可以实现css模块化 ;
 
-使用v-for 需要在最外层的 v-for 套上<template></template>标签 ; 
+使用v-for 需要在最外层的 v-for 套上<!-- <template></template> -->标签 ; 
 v-for 语法不支持[[]] 嵌套 静态属性不支持["key"] 请用.key 动态属性可以[key]
 []内可以带.
 

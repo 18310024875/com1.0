@@ -7,6 +7,7 @@
 		</div>
 	</div>
 </template>
+
 <style scoped="#app" >
 	#main{
 	    width: 100%;height: calc(100% - 1rem);
@@ -62,7 +63,7 @@
 		},
 
 		data:{
-			app:'app'
+			app:'999'
 		},
 		watch:{
 

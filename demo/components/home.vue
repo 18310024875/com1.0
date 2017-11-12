@@ -1,7 +1,7 @@
 <template>
 	<div id="home" ref="home">
 
-	    <div class="swiper-container" ref="sc" style="height:211px">
+	    <div class="swiper-container" ref="sc" style="height:211px;margin-bottom: 40px;">
 	        <div class="swiper-wrapper" ref="sw">
 
 	        	<template>
@@ -55,7 +55,42 @@
 	</div>
 </template>
 <style scoped="#home" >
-
+	.swiper-slide img {
+	  width: 100%;
+	}
+	.m_box {
+	  width: 90%;
+	  margin: .3rem auto 0 auto;
+	  background: #f0f0f0;
+	}
+	.m_box li {
+	  color: #9a9a9a ;
+	  margin-bottom: .34rem;
+	  padding-bottom: .1rem;
+	  box-shadow: 0.5px 0.5px 1px #a8a8a8;
+	  background: #f9f9f9 ;
+	}
+	.m_box li img {
+	  width: 100%;
+	}
+	.m_box li div {
+	  margin-top: .2rem;
+	  position: relative;
+	}
+	.m_box li div p {
+	  padding-left: 0.3rem;
+	}
+	.m_box li div .p1 {
+	  color: #333;
+	  font-size: .25rem;
+	}
+	.m_box li div .fen {
+	  color: #f78360;
+	  font-size: .37rem;
+	  position: absolute;
+	  right: .34rem;
+	  top: 1px ;
+}
 </style>
 
 <script>

@@ -73,6 +73,11 @@
 					doVFOR.readVF( VFor_Tpl_Arr[i] , exoprt_options ,forWrap[i] )
 				}				
 			}
+		// 7.5 如果存在 template 说明不是异步请求组件 不需要回调 ~!!
+			if( exoprt_options.template ){
+				delete exoprt_options.template ;
+				return exoprt_options;
+			}
 
 		// (8) 调用回调函数 ;
 			callback( exoprt_options )

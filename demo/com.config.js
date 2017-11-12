@@ -1,5 +1,6 @@
 
 Com.config = {
+	// 固定组件
 	app:'./components/app.vue',
 	header:'./components/header.vue',
 	leftMenu:'./components/leftMenu.vue',
@@ -29,7 +30,7 @@ var routes = [
 // 跟组件 ;
 Com.require('app',function( options ){
 	// new跟组件实例 ;
-	window.app = new Component( options ) ;
+	window.app = new Com( options ) ;
 	// 挂载路由  ;
 	Com.router.beforeRun(function(){
 		try{
@@ -37,3 +38,52 @@ Com.require('app',function( options ){
 		}catch(e){}
 	}).run(routes)
 })
+
+// var son = {
+// 	data:{
+// 		bind:'okokok',
+// 		color:'red'
+// 	},
+// 	template:`<h2 v-bind:style="color:color;">{{bind}}</h2>`,
+// 	mounted:function(){
+// 		window.son = this ;
+// 	}
+// };
+
+// var h = Com.make (
+// 	{
+// 		// 跟组件需要el属性 ;
+// 		el:'body',
+// 		template:`
+
+// 			<h1>
+// 				{{ok}}
+// 				<app_header/>
+// 				<app_leftMenu/>
+// 			</h1>
+// 		`,
+// 		components:{
+// 			app_header:son,
+// 			app_leftMenu:'mine',
+// 		},
+
+// 		data:{
+// 			ok:'999'
+// 		},
+// 		watch:{
+
+// 		},
+// 		methods:{
+
+// 		},
+
+// 		updated(){
+
+// 		},
+// 		mounted:function () {
+		
+// 		}
+// 	}
+// );
+
+// console.log(h);

@@ -3,7 +3,7 @@
 
 	// XML 请求对象 , 暂时为同步请求 ; 
 	var req = function(url,callback){
-		log(url)
+		// log(url)
 		var xhr = new XMLHttpRequest() ;
 	    xhr.open("get", url, true);
 	    xhr.onreadystatechange = function () {
@@ -72,7 +72,7 @@
 		    // 换行会对 match 造成影响 先去换行 ;
 			xhr = xhr.replace(/\r/g,'__换行__') ;
 			xhr = xhr.replace(/\n/g,'__换行__') ; 
-
+// log(xhr) 
 			// 1 动态生成 script 标签( 必须有 )
 			var JS = xhr.match(/<script.*?>(.*)<\/script>/)[1] ;
 			var export_options = this.Make_script( JS , only_exp_name ) ;
@@ -117,7 +117,7 @@
 			js = js.replace(/Com\.exports\s*=\s*{/g,"Com.exports={     autoName:'"+only_exp_name+"',") ;
 
 			js = "(function(){"+"\n"+ js +"\n"+"}());" ;
-
+// log(js)
 			$('body').after($('<script>').html(js));
 
 			// *** 一个组件 ********* ; ;  ; ; ; ; 
@@ -140,7 +140,7 @@
 					each = css_el+' '+each ;
 				CSS += each+'\n';
 			  }
-			})
+			});
 			$('<style>').html(CSS).appendTo($('head'))
 		},
 

@@ -30,6 +30,50 @@
 	</div>
 
 </template>
+
+<style scoped="#citys">
+	p {
+	  height: .8rem;
+	  background: #ebebeb;
+	  padding-left: .32rem;
+	  line-height: .8rem;
+	  font-size: .28rem;
+	  font-weight: bold;
+	  color: #333;
+	}
+	p:nth-of-type(1),
+	> p:nth-of-type(3),
+	> p:nth-of-type(4) {
+	  font-weight: normal;
+	}
+	p:nth-of-type(2) {
+	  background: white;
+	  font-size: .32rem;
+	  font-weight: normal;
+	  color: #e2941a;
+	  height: .94rem;
+	  line-height: .94rem;
+	  padding-left: .5rem;
+	}
+	ul {
+	  overflow: hidden;
+	  width: 100%;
+	}
+	ul li {
+	  height: .94rem;
+	  line-height: .94rem;
+	  color: #838383;
+	  font-size: .32rem;
+	  width: 25%;
+	  text-align: center;
+	  float: left;
+	  border-bottom: #ebebeb 1px solid;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  overflow: hidden;
+	}
+</style>
+
 <script type="text/javascript">
 
 	Com.exports = {

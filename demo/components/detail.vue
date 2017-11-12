@@ -31,6 +31,50 @@
 	</div>
 
 </template>
+
+<style scoped="#details">	
+	>img {
+	  width: 100%;
+	}
+	.part1 {
+	  font-size: .32rem ;
+	  margin: .28rem 0 .2rem 0;
+	}
+	.part1 span {
+	  display: inline-block;
+	  width: .3rem;
+	  background: #e4c89c;
+	  margin-right: .1rem;
+	}
+	p {
+	  text-indent: .4rem;
+	  line-height: .6rem;
+	}
+	p span {
+	  margin-right: 0.1rem;
+	}
+	.part2 {
+	  margin-top: .1rem;
+	  padding-left: .4rem;
+	  line-height: .38rem;
+	  padding-right: .4rem;
+	}
+	.bth {
+	  text-align: center;
+	  margin: .4rem auto;
+	  margin-bottom: 0;
+	  font-size: .28rem;
+	  width: 3.12rem;
+	  height: .72rem;
+	  line-height: .72rem;
+	  border: none;
+	  background-color: #fe8233;
+	  padding: 0;
+	  border-radius: .36rem;
+	  color: #fff;
+	}
+</style>
+
 <script type="text/javascript">
 
 	Com.exports = {

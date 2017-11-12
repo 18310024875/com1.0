@@ -26,7 +26,99 @@
 	</div>
 </template>
 <style scoped="#cinema" >
-
+.div {
+  height: .8rem;
+  line-height: .8rem;
+  font-size: .28rem;
+  padding-left: .32rem;
+  background: #e1e1e1;
+  margin-bottom: 1px;
+  color: #636363;
+  cursor: pointer;
+}
+ul li {
+  padding: .2rem 0 .24rem .32rem;
+  cursor: pointer;
+  position: relative;
+  border-bottom: 1px solid #e1e1e1;
+}
+ul li h6 {
+  width: .17rem;
+  height: .17rem;
+  display: inline-block;
+  border: 1px solid #ccc;
+  transform: rotate(45deg);
+  border-left: none;
+  border-bottom: none;
+  position: absolute;
+  right: .3rem;
+  top: .35rem;
+}
+ul li > div {
+  font-size: .32rem;
+  width: 100%;
+  height: .5rem;
+}
+ul li > div p {
+  display: inline-block;
+  color: #111;
+  max-width: 4rem;
+}
+ul li > div span {
+  border-radius: 50%;
+  font-size: .3rem;
+  display: inline-block;
+  width: .55rem;
+  height: .55rem;
+  line-height: .55rem;
+  text-align: center;
+  transform: scale(0.6, 0.6);
+  position: relative;
+  top: -0.1rem;
+}
+ul li > div span:nth-of-type(1) {
+  border: 1px solid #ff9658;
+  color: #ff9658;
+}
+ul li > div span:nth-of-type(2) {
+  border: 1px solid #9ebdd2;
+  color: #9ebdd2;
+  position: relative;
+  left: -0.1rem;
+}
+ul li p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+ul li .p1 {
+  color: #ccc;
+  margin-top: .1rem;
+  max-width: 83%;
+}
+ul li .p2 {
+  color: #ccc;
+  margin-top: .1rem;
+}
+ul li h5 {
+  display: inline-block;
+  margin-top: .1rem;
+  margin-bottom: 1px;
+  height: .32rem;
+  line-height: .32rem;
+  padding: 0 .1rem;
+  color: white;
+  font-weight: normal;
+  border-radius: 0.07rem;
+  transform: scale(0.95);
+  font-size: .2rem;
+}
+ul li .h1 {
+  background: #51add0;
+}
+ul li .h2 {
+  background: #ff9658;
+}
 </style>
 
 <script>

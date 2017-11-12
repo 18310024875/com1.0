@@ -38,8 +38,73 @@
 		</div>
   	</div>
 </template>
-<style scoped="#mine" >
-
+<style scoped="#card" >
+	.card_wrapper {
+	  width: 90%;
+	  margin: 0 auto;
+	}
+	.tit {
+	  height: 1rem;
+	  line-height: 1rem;
+	  overflow: hidden;
+	  border-bottom: solid #fe6e00 1px;
+	}
+	.tit li {
+	  height: 1rem;
+	  float: left;
+	  color: #6a6a6a;
+	  width: 50%;
+	  text-align: center;
+	  box-sizing: border-box;
+	  font-size: .3rem;
+	  border-bottom: 3px solid transparent ;
+	}
+	.tit .active {
+	  color: #fe6e00;
+	  border-bottom: 3px solid #fe6e00;
+	}
+	.box .bth {
+	  width: 3.2rem;
+	  margin: .9rem auto .6rem;
+	  border-radius: .36rem;
+	  background-color: #fe8233;
+	  height: .72rem;
+	  color: #fff;
+	  font-size: .28rem;
+	  line-height: .72rem;
+	  text-align: center;
+	}
+	.box > div {
+	  width: 5.12rem ;
+	  height: .68rem;
+	  margin: 0 auto;
+	}
+	.box > div h5 {
+	  height: 5px;
+	  width: 100%;
+	  border: 1px solid #ccc;
+	  border-top: none;
+	  margin-top: -0.1rem;
+	}
+	.box > div > div {
+	  width: 100%;
+	  overflow: hidden;
+	  color: #333;
+	  font-size: .28rem;
+	  margin-top: .6rem;
+	}
+	.box > div > div p {
+	  line-height: .68rem;
+	  margin: 0 .3rem 0 .2rem;
+	  float: left;
+	}
+	.box > div > div input {
+	  float: left;
+	  line-height: .68rem ;
+	  font-size: .28rem;
+	  margin-left: 0.15rem;
+	  height: .6rem;
+	}
 </style>
 
 <script>

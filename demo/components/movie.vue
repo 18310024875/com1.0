@@ -69,7 +69,108 @@
 </template>
 
 <style scoped="#movie" >
-
+	.movie_wrapper {
+	  width: 90%;
+	  margin: 0 auto;
+	}
+	.tit {
+	  height: 1rem;
+	  line-height: 1rem;
+	  overflow: hidden;
+	  border-bottom: solid #fe6e00 1px;
+	}
+	.tit li {
+	  height: 1rem;
+	  float: left;
+	  color: #6a6a6a;
+	  width: 50%;
+	  text-align: center;
+	  box-sizing: border-box;
+	  font-size: .3rem;
+	  border-bottom: 3px solid transparent ;
+	}
+	.tit .active {
+	  color: #fe6e00;
+	  border-bottom: 3px solid #fe6e00;
+	}
+	.box li {
+	  border-bottom: dashed 1px #c9c9c9;
+	  padding: .4rem 0;
+	  overflow: hidden;
+	  position: relative;
+	}
+	.box li .fen {
+	  position: absolute;
+	  right: .33rem;
+	  top: .48rem;
+	  color: #fc7103;
+	  font-size: .32rem;
+	}
+	.box li .fen i {
+	  display: inline-block;
+	  width: .13rem;
+	  height: .13rem;
+	  border: 1px solid #999;
+	  opacity: .6;
+	  position: relative;
+	  top: -1px;
+	  transform: rotate(45deg);
+	  border-left: none;
+	  border-bottom: none;
+	}
+	.box li > div {
+	  float: left;
+	}
+	.box li .fl {
+	  width: 1.2rem;
+	  height: 1.64rem;
+	  overflow: hidden;
+	}
+	.box li .fl img {
+	  width: 100%;
+	  height: 100%;
+	}
+	.box li .fr {
+	  margin-left: .27rem;
+	  color: #8e8e8e;
+	}
+	.box li .fr p {
+	  overflow: hidden;
+	  text-overflow: ellipsis;
+	  white-space: nowrap;
+	  width: 3.3rem;
+	}
+	.box li .fr .p1 {
+	  font-size: .3rem;
+	  color: #000;
+	  margin-top: .1rem;
+	}
+	.box li .fr .p2 {
+	  margin-top: .18rem;
+	}
+	.box li .fr .div {
+	  margin-top: .23rem;
+	  width: 3.6rem;
+	  overflow: hidden;
+	}
+	.box li .fr .div div:nth-of-type(1) {
+	  float: left;
+	}
+	.box li .fr .div div:nth-of-type(2) {
+	  float: right;
+	}
+	.box li .fr .div span {
+	  color: #8aa2bf;
+	}
+	.box li .fr .div2 {
+	  margin-top: .23rem;
+	  overflow: hidden;
+	  color: #ffb375;
+	}
+	.box li .fr .div2 div {
+	  float: left;
+	  margin-right: 0.3rem;
+	}
 </style>
 
 <script>

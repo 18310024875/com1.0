@@ -95,7 +95,7 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 	(function(){
 		var realPush_Arr = [] ; // 用来储存对象 ( 为了push到children );
 		var push = null ;   // 真正的push元素 ;  
-		var isVFbegin ;//是否是 v-for的wrapper ;;;
+		var isVFbegin ;  // 是否是 v-for的wrapper ;;;
 		for ( var i=0,j=ARR.length ; i<j ; i++) {//log(realPush_Arr);
 			// 每个 未处理的 vnode ;
 			var each = ARR[i] ;
