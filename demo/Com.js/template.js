@@ -48,6 +48,7 @@
 
 			tpl = tpl.replace(/>([^<>]+?)</g,'><font class="template_font" v-bind:vTEXT="'+'$1'+'"></font><');
 		// (3.5) 替换v-if
+			// *** v-if 添加v-bind 可以在setState 中获取新值 在操作 ;
 			tpl = tpl.replace(/v-if/g,'v-bind:vifkey');
 
 		// ********* vFOR ********
@@ -133,6 +134,10 @@
 
 			//exoprt_options.All_Vnodes[only_id] = VNode ;
 
+		/*
+			*** 处理 v-on 
+			*** 如果 v-on 事件需要传值 , 添加v-bind 到attr上 , 元素改变attr会自动变化 , 触发事件时再从标签上获取attr的新值 ; 
+		*/ 
 			//*** 事件的处理 先把v-on拆分 再把事件传参绑定到虚拟DOM上
 			if( startTag.includes('v-on') ){
 				var save_vonkey = {} ;

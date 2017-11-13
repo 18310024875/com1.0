@@ -27,57 +27,61 @@
 
 	 	// 事件
 	 	this.methods = opt.methods||{} ;
-	 	// 事件绑定到this
+	 	// *** methods 绑定到 this *** ;
 	 	var methods = this.methods ;
-	 	if( $.isEmptyObject() ){
-	 		(function(){
-		 		for(var each in methods){
-		 			(function(each){
+ 		(function(){
+	 		for(var each in methods){
+	 			(function(each){
 
-		 				Object.defineProperty( this_ , each , {
-		 					get:function(){
-		 						return this_.methods[each]
-		 					}
-		 				})
+	 				Object.defineProperty( this_ , each , {
+	 					get:function(){
+	 						return this_.methods[each]
+	 					}
+	 				})
 
-		 			}(each))
-		 		}
-	 		}())
-	 	}
+	 			}(each))
+	 		}
+ 		}())
+	 	
 
 		// WATCH
 		this.watch = opt.watch || {} ;
 		this.watchCallbacks = [] ;
 		this.watchReady = function(){
 			this.watchCallbacks.map(function(v){
-				eval('this_.watch.'+v)
+				// 调用 watchCallbacks ;
+				eval('this_.watch.'+v);
 			})
 			this.watchCallbacks = [] ;
 		}
 
 		// 数据绑定
 		this.$data = opt.data||{} ;
-		// this.$data.key 响应到 this.key ;
+		// *** data 绑定到 this *** ;
 		(function(){
+			// ** data 是 this.data ;
 			var data = this_.$data ;
 			for(var each in data){
 				(function(each){
 
 					Object.defineProperty( this_ , each , {
 						set:function( new_ ){
+							// warn(new_);
 							var old_ = data[each] ;
 							if( old_!= new_ ){
+
 								data[each] = new_ ;
 
 								// watch
 								if( this_.watch[each] ){
+									// watch 以字符串方式放入 watchCallbacks ;
 									var w = each+'("'+new_+'","'+old_+'")' ;
-									this_.watchCallbacks.push(w)
-									log(this.watchCallbacks)
+									this_.watchCallbacks.push(w);
+									console.log(this.watchCallbacks);
 								}
 
 							}else{
-								warn('same change')
+								console.warn('same change')
 							}
 						},
 						get:function(){
@@ -90,14 +94,21 @@
 		}());
 
 
-	// 渲染 ;
+	/*
+		渲染 
+		  根组件必须有el属性 , 子组件自动添加el 所以el一定存在!!!
+	*/
 		var dom = this.reedTree( this.VnodeTree  ) ;
 		this.$el.append(dom) ;
 
-	// 克隆一份数据 用于比较 ;;
+	/*
+		克隆一份数据 用于比较 ;;
+	*/ 
 		this.VnodeTree_DIFF = tool.deepClone( this.VnodeTree ) ; 
 
-	// 生命周期
+	/*
+		调用 生命周期 mounted
+	*/ 
 		if( this.mounted ){
 			this.mounted()
 		}
@@ -110,6 +121,9 @@
 	Component.prototype.reedTree=function(tree){
 
 		var this_ = this ;
+		/*
+			判断是否ref属性绑定到组件上 , 绑定到组件上 返回组件 , 绑定到元素上 返回 dom
+		*/
 		var isRefInComponents = false ; 
 		var ref_NewAComponent ;
 
@@ -119,6 +133,9 @@
 
 		// router-view
 		if( tagName=='router-view' ){
+    	/*
+			改变 father 为section ; 添加class ;
+    	*/  
 			father = $("<section>")
 			tree.class = [{value:'router-view'}]
 			window.router.routerView = tree ;
@@ -127,17 +144,25 @@
 		// *** 寻找组件 !!!
 	  	var components = this.components ;
 	  	if( components ){
-	  		// tagName 为 挂载父级元素模板内名字 ;
+	  		// tagName 为 挂载父级元素模板内名字 ; --- 组件写到模板 解析时 tree.tagName为标签名字 ;
 	  		if( components[tagName] ){
 	  			isRefInComponents = true ;
-	    		// config_name 为 config.js 注册模块名 ;
+	    		/*
+					config_name 类型{
+						1 String  ---  config.js 注册模块名( 已加载 ) ;
+						2 String  ---  config.js 注册模块名( 没加载过 ) ;
+						3 Object  ---  var 声明的组件!!! object = options ;
+					}
+	    		*/ 
 	  			var config_name = components[tagName] ;
 
-	    		// 元素替换成section ; 添加class
+	    	/*
+				改变 father 为section ; 添加class ;
+	    	*/  
 	  			father = $("<section>");
 	  			tree.class = [{value:'configName_'+config_name}]
 
-	  			// 已经加载过 从saveExports中取options ;
+	  			// 1 已经加载过 从saveExports中取options ;
 	  			if( tool.saveExports[config_name] ){
 	  				
 	  				var options = tool.saveExports[config_name] ;
@@ -146,14 +171,15 @@
 	  				options.el = father ;
 					ref_NewAComponent = new Component( options )
 	  			}
-	  			// 如果components为对象 说明需要动态创建组件 调动Com.make动态创建
+	  			// 2 如果components为对象 是 var 创建的组件 调动Com.make动态创建 (组件必须含有 template)
 	  			else if( typeof components[tagName] == 'object' ){
-	  				options = components[tagName] ; // --- 动态创建的对象
+	  				// --- components[tagName] 为 动态创建的对象 就是带 template 的 options ;
+	  				options = components[tagName] ; 
 	  				options.el = father ; // 添加挂载对象
 	  				// 调用Com.make
 	  				ref_NewAComponent = Com.make( options );
 	  			}
-	  			// 没加载过 -- 异步请求
+	  			// 3 没加载过 -- 异步请求
 	  			else{
 
 					Com.require( config_name ,function( options ){
@@ -162,12 +188,12 @@
 						// el是变量 -- 需要动态添加
 						options.el = father ;
 						ref_NewAComponent = new Component( options )
-					})
+					});
 	  			}
 
-	  		  // ******* 组件树暂时不不会有子组件 ; 所以在子组件 改变data 在父组件setState 子组件不会刷新 ;
+	  		    // ???  组件树暂时不不会有子组件 ; 所以在子组件 改变data 在父组件setState 子组件不会刷新 ;
 
-	  			// ***  之后添加 props 会用到 !!!! 
+	  			// ???  之后添加 props 会用到 !!!! 
 	  
 	  		}	
 	  	};
@@ -176,12 +202,14 @@
 		tree.$DOM = father ;
 		tree.DOM = father.get(0);
 
-		// children ; 
+	/*
+		!!! 递归 children ___ 递归之所以在这个位置 需要创建完 操作 !!! ; 
+	*/ 
 		var arr = tree.children ;
 		if( arr.length !=0 ){
 			for ( var i=0,j=arr.length ; i<j ; i++ ) {
 				// 递归
-				var child = this.reedTree( arr[i] )
+				var child = this.reedTree( arr[i] );
 				father.append( child )			
 			}
 		}
@@ -206,7 +234,7 @@
 		if( class_.length!=0 ){
 			var str = '' ;
 			class_.map(function(v){
-				str += (" "+v.value)
+				str += (" "+v.value) ;
 			})	
 			father.addClass( str ) ;
 		}
@@ -229,7 +257,11 @@
 		// attr !!! 当绑定的是一个对象 或者数组 应该转化成 JSON ;
 		if( attr_.length!=0 ){
 			attr_.map(function(v){
-				// $refs
+
+			 /*
+				********** $refs 会按照 attr 解析 !!! ;
+				  		ref不需要 v-bind 绑定 !!!
+			 */ 
 				if( v.dom_key=='ref' ){
 					  // 组件上的 ref ;
 					if( isRefInComponents ){
@@ -239,7 +271,10 @@
 						this_.$refs[v.value] = tree.$DOM ;
 					}
 				}
-				// v-if
+
+			/*
+				*** v-if *** 
+			*/ 
 				if( v.dom_key=='vifkey' ){
 					if(v.value){
 						tree.$DOM.css({display:'block'})
@@ -248,19 +283,11 @@
 					}
 				}
 
-				// *** 事件绑定
+			/*
+			    v-on -- 事件绑定 ;
+			*/
 				if( v.dom_key.includes('v-on')){
 					
-					// if(!window.arr){
-					// 	window.arr = [] ;
-					// }
-					// (function($dom){
-					// 	log($dom)
-					// 	window.arr.push( $dom ) ;
-					// }(  tree.$DOM ));
-					// log(tree);
-					// log(tree.DOM)
-					// log(tree.$DOM)
 					// 方法名
 					var Event_name = v.dom_key.split(':')[1] ;
 					// "name(val1,'val2')"
@@ -280,22 +307,27 @@
 						})
 					}else{
 					  // 事件是 "name" 
-					}
-
-					// *** 一个巨大的BUG tree为引用类型传递 ; target==tree.DOM 实际上不准确 vfor后tree会被最后一个覆盖 ;;;;
-					// *** 可以利用闭包 吧tree.DOM 传递进去 复制一个指针! ;
+					};
+					/*	
+						*** 事件声明
+						*** 一个巨大的BUG tree为引用类型传递 ; target==tree.DOM 实际上不准确 vfor后tree会被最后一个覆盖 ;
+						*** 可以利用闭包 吧tree.DOM 传递进去 复制一个指针! ;
+					*/
 					(function( dom , $dom ){
-						// jquery 的事件委托有BUG 不知道什么原因 ; 自己弄一个吧 !
+						// 事件委托 到 body元素 !!! ;
 						document.body.addEventListener( Event_name , function(e){
 							(function( t ){
 								if( t== dom ){
 									var arr = [] ;
 									pushArgumentsKeys.map(function(v){
-										arr.push( eval(v) )
+										// 调用每一项 取到值
+										arr.push( eval(v) );
 									})
-									// 调用组件方法 ;
+									// 调用组件方法 (传值数组 , e) ;
 									this_.methods[method_name].call(this_, arr , e );
+
 								}else if(t == document.body){
+									// 到body没找到元素 结束函数
 									return ;
 								}else{
 									arguments.callee( t.parentNode )
@@ -309,14 +341,16 @@
 
 				} // 事件绑定结束 ; 
 
-				// 对象编程JSON ( 只针对attr就行 )
+				/*
+					对象 变成JSON再赋值 ( 只针对attr就行 );;;
+				*/ 
 				if( typeof v.value == 'object' ){
 					v.value = JSON.stringify(v.value)
 				}
 
 				var obj={} ;
 					obj[v.dom_key] = v.value ;
-
+				// 赋值
 				father.attr( obj ) ;
 			})
 		}
@@ -324,6 +358,7 @@
 		return father ;
 	}
 	// reedTree over
+
 
 	Component.prototype.setState = function(){
 
@@ -348,6 +383,7 @@
 				x_father.$DOM.append(addDOM)
 				return ;
 			}
+
 		  // *** 响应 vfor 绑定对象的长度改变 ;;;
 			// 存在vfor ;
 			var vf = x.VFOR_template ;
@@ -361,6 +397,11 @@
 				if( new_vf_length!=vf_length ){
 					// 以我的能力 这里的优化写不出 ; 应该根据key判断错位 ;
 					var resolution = vf.resolution ;
+
+				/*
+					!!! 当数组长度变化 调用 doVFOR.readAgainVF , 需要传递原始模板 clone_VF_tree , 数据源 Data , 作用域 resolution ;
+					!!! 原始模板为第一次处理后的数组 (  树形结构 , v-for还没有克隆  ) ;
+				*/
 					var new_tree = doVFOR.readAgainVF( vf.clone_VF_tree , Data , resolution ) ;
 					// 返回的结构是错位的 这里复位 ;
 					x = new_tree ;
@@ -474,14 +515,18 @@
 			var len2 = old.children.length ;
 			var len = Math.max(len1,len2) ;
 
+			/*
+				递归;;;
+			*/
 			for( var i=0 ; i<len ; i++  ){
 				var n_child = x.children[i] ;
 				var o_child = old.children[i] ;
 				arguments.callee( n_child , o_child , x ) ;
 			}
-			// 递归over ;
+
 
 		} ( new_tree , old_tree, null ) );
+		// 递归over ;
 		
 		// 事件 全部触发 !!!! ;
 		this.EmitGO();

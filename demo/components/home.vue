@@ -1,7 +1,7 @@
 <template>
 	<div id="home" ref="home">
 
-	    <div class="swiper-container" ref="sc" style="height:211px;margin-bottom: 40px;">
+	    <div class="swiper-container" ref="sc">
 	        <div class="swiper-wrapper" ref="sw">
 
 	        	<template>

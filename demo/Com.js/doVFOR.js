@@ -30,13 +30,17 @@
 
 window.doVFOR={}
 
-// ------------------------------------------------------------------------------------
 // 处理 vfor
 window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){ 
 
 		var tpl = tpl.match(/<template>(.*)<\/template>/)[1] ;
+	/*
+		1111111111
+			便利所有标签 , 
+			存在v-for外层包裹一个标签 , 目的是把循环后的变迁加入到其中 🌲 --------------------------------------------------------------------;
+			处理后 ARR 为平级数组 ;
+	*/
 
-	// ****************************************** 制作树 **************************************🌲
 
 		var len = 0 ;			// 每一个 开始标签 len++ ; 每一个结束标签 len-- ;
 		var len_arr = [] ;		// 每一个 v-for len-arr.push( len );  ( 到结束标签时候 同意判断 ) ;
@@ -46,6 +50,7 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 		var ARR = [] ;			// 处理后的标签数组 ;
 
 		if(arr.length==0){console.error('没有解析完成 template');return};
+
 		for(var m=0,n=arr.length;m<n;m++){
 			// 每个标签 ;
 			var each = arr[m];
@@ -89,8 +94,11 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 			}
 		} //for over ;;;
 
-	// **********************************************
-	// 整理格式 初级树 🌲 ;;;
+	/*
+		22222222222
+			整理树形格式
+			处理后 映射成树形结构 , 但是v-for还没有克隆  ------------------------------------------------------------------------------------- ;
+	*/
 	var VF_tree ;
 	(function(){
 		var realPush_Arr = [] ; // 用来储存对象 ( 为了push到children );
@@ -126,11 +134,13 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 		} ;
 		VF_tree = realPush_Arr.pop() ;
 	}());
-	
 
-//  ********************************************************
-//  编译 v-for 代码块!!! ( 解决v-for嵌套问题 );
-
+/*
+	3333333333333333333
+		参照组件的 v-for , 动态克隆组件中v-for结构 ------------------------------------------------------------------------------------;
+		双递归 , 便利v-for 
+*/
+	//  编译 v-for 代码块!!! ( 解决v-for嵌套问题 );
 	//数据源 ;
 	var Data = exoprt_options.data ; 
 	// 作用域 !!!!!!! ;
@@ -149,7 +159,8 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 		// *** 默认第一次解析 只有一个子元素( tagName带有v-for ) ;
 		var vf_child = tree.VF_Children[0] ; 
 
-		// *** 解析 v-for="( item index ) in items ;
+
+		// *** 解析 v-for="( item , index ) in items ;
 		var vkitems = vf_child.tagName.match(/v-for="\s*\(\s*([\w-]+)\s*,\s*([\w-]+)\s*\)\s+in\s+([\w-\.\[\]]+)\s*"/) ;
 
 		var __item__  = vkitems[1] ;  // 在作用域拼接'['+...+']' ;
@@ -163,27 +174,28 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 		// *** 赋值运算 !!!!
 		var dataKey = __ITEMS__ ; //数据键 ;
 		var ArrObj ; //值
-		// 作用域中 存在!!!
-		try{
-			if( eval('resolution.'+dataKey) ){
-				// 作用域存在 从作用域中取
-				ArrObj = eval('Data.'+resolution[__ITEMS__]);
-			}
-		}catch(e){};
-		// 作用域中 不存在 , 在组件中找 !!! ;
-		if(!ArrObj){
+		// ***** 寻找数据 ( ArrObj ) ;
+			// 作用域中 存在!!!
 			try{
-				// *** 添加到作用域 ;;;
-				resolution[__ITEMS__] = __ITEMS__ ;
-
-				ArrObj = eval('Data.'+resolution[__ITEMS__]);
+				if( eval('resolution.'+dataKey) ){
+					// 作用域存在 从作用域中取
+					ArrObj = eval('Data.'+resolution[__ITEMS__]);
+				}
 			}catch(e){};
-		}
-		if( !ArrObj ){
-			console.warn('作用域解析失败 数组置为 []')
-			ArrObj = [] ;
-			// ?console.error('作用域解析失败'):null;
-		}
+			// 作用域中 不存在 , 在组件中找 !!! ;
+			if(!ArrObj){
+				try{
+					// *** 添加到作用域 ;;;
+					resolution[__ITEMS__] = __ITEMS__ ;
+
+					ArrObj = eval('Data.'+resolution[__ITEMS__]);
+				}catch(e){};
+			}
+			if( !ArrObj ){
+				console.warn('作用域解析失败 数组置为 []')
+				ArrObj = [] ;
+				// ?console.error('作用域解析失败'):null;
+			}
 
 		// 在此处添加 VFOR_template 绑定的 数组|对象 ;
 		// 把模板添加到父级元素 acticle 对比的时候 可以相应数组的变化 ;;;
@@ -211,6 +223,8 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 
 		// 便利的对象 ;
 		if( typeof ArrObj =='object' ){
+
+			// ******************* 便利v-for ****************************
 				// Array
 				if(ArrObj instanceof Array){
 					for( var i=0,j=ArrObj.length; i<j ;i++ ){
@@ -224,8 +238,12 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 							new_resolution[ __item__ ]  = new_resolution[ __ITEMS__ ] +'["'+i+'"]'
 							new_resolution[ __index__ ] = '#'+i+'#' ; 
 
+
+
+			// ******************* 平级 , 克隆v-for ****************************
 						// 新元素
 						var new_vfchild = tool.deepClone( vf_child ) ;
+
 						// add
 						tree.CHILDREN.push( new_vfchild )
 						// 处理代码块
@@ -244,7 +262,7 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 
 	} // MAKE_VF_SCOPE over ;;
 
-	// 处理每一个代码块 !!! ;
+	// 递归检查 组件内嵌套大的 v-for -- 存在的话返回 MAKE_VF_SCOPE 继续替换 ;;;
 	function one_VFSCOPE ( tree , resolution ) {
 
 		if(!tree.children){console.error('no children init');return };
@@ -651,8 +669,8 @@ window.doVFOR.readVF = function( tpl , exoprt_options ,each_forW ){
 	}
 
 	window.doVFOR.readAgainVF = function( tree , data ,resolution ){
-		Data = data
-		MAKE_VF_SCOPE( tree , resolution ); 
+		Data = data ;
+		MAKE_VF_SCOPE( tree , resolution ) ;
 		return tree ;
 	};
 }

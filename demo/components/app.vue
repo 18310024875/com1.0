@@ -63,7 +63,6 @@
 		},
 
 		data:{
-			app:'999'
 		},
 		watch:{
 
@@ -76,7 +75,7 @@
 
 		},
 		mounted:function () {
-		
+
 		}
 	}
 
