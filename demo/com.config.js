@@ -27,7 +27,7 @@ var routes = [
 	{path:'detail',component:'detail'},
 ];
 
-// 跟组件 ;
+// 根组件 ;
 Com.require('app',function( options ){
 	// new跟组件实例 ;
 	window.app = new Com( options ) ;
@@ -38,52 +38,3 @@ Com.require('app',function( options ){
 		}catch(e){}
 	}).run(routes)
 })
-
-// var son = {
-// 	data:{
-// 		bind:'okokok',
-// 		color:'red'
-// 	},
-// 	template:`<h2 v-bind:style="color:color;">{{bind}}</h2>`,
-// 	mounted:function(){
-// 		window.son = this ;
-// 	}
-// };
-
-// var h = Com.make (
-// 	{
-// 		// 跟组件需要el属性 ;
-// 		el:'body',
-// 		template:`
-
-// 			<h1>
-// 				{{ok}}
-// 				<app_header/>
-// 				<app_leftMenu/>
-// 			</h1>
-// 		`,
-// 		components:{
-// 			app_header:son,
-// 			app_leftMenu:'mine',
-// 		},
-
-// 		data:{
-// 			ok:'999'
-// 		},
-// 		watch:{
-
-// 		},
-// 		methods:{
-
-// 		},
-
-// 		updated(){
-
-// 		},
-// 		mounted:function () {
-		
-// 		}
-// 	}
-// );
-
-// console.log(h);

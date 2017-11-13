@@ -75,7 +75,7 @@
 			}
 		// 7.5 如果存在 template 说明不是异步请求组件 不需要回调 ~!!
 			if( exoprt_options.template ){
-				delete exoprt_options.template ;
+				// delete exoprt_options.template ;
 				return exoprt_options;
 			}
 

@@ -497,6 +497,15 @@
 		this.watchReady() ;
 
 	};
+
+
+	Object.defineProperty( Component.prototype , 's' , {
+		get:function(){
+			this.setState();
+		}
+	})
+
+
 	// 比较不同 ;
 	function getDiff( new_ , old_ , Data , fromAttr){
 		var change = {} ;
