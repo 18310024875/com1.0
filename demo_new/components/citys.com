@@ -5,19 +5,14 @@
 		<p>北京</p>
 		<p>热门城市</p>
 		<ul>
-			<template>
-				<li v-for="(v,k) in imp" >{{v}}</li>
-			</template>
+			<li v-for="(v,k) in imp" >{{v}}</li>
 		</ul>
 		<p>按字母排序</p>
 		<ul>
-			<template>
-				<li v-for="(v,k) in arr" >
-					{{v}}
-				</li>
-			</template>
+			<li v-for="(v,k) in arr" >
+				{{v}}
+			</li>
 		</ul>
-		<template>
 			<div v-for="(v,k) in arr">
 				<p class="citys_p">{{v}}</p>
 				<ul>
@@ -25,52 +20,52 @@
 						{{v2.name}}
 					</li>					
 				</ul>
-			</div>	
-		</template>
+			</div>
 	</div>
 
 </template>
 
-<style scoped="#citys">
-	p {
-	  height: .8rem;
-	  background: #ebebeb;
-	  padding-left: .32rem;
-	  line-height: .8rem;
-	  font-size: .28rem;
-	  font-weight: bold;
-	  color: #333;
-	}
-	p:nth-of-type(1),
-	> p:nth-of-type(3),
-	> p:nth-of-type(4) {
-	  font-weight: normal;
-	}
-	p:nth-of-type(2) {
-	  background: white;
-	  font-size: .32rem;
-	  font-weight: normal;
-	  color: #e2941a;
-	  height: .94rem;
-	  line-height: .94rem;
-	  padding-left: .5rem;
-	}
-	ul {
-	  overflow: hidden;
-	  width: 100%;
-	}
-	ul li {
-	  height: .94rem;
-	  line-height: .94rem;
-	  color: #838383;
-	  font-size: .32rem;
-	  width: 25%;
-	  text-align: center;
-	  float: left;
-	  border-bottom: #ebebeb 1px solid;
-	  text-overflow: ellipsis;
-	  white-space: nowrap;
-	  overflow: hidden;
+<style lang="less">
+	#citys{
+		p{
+			height: .8rem;
+			background: #ebebeb;
+			padding-left: .32rem;
+			line-height: .8rem;
+			font-size: .28rem;
+			font-weight: bold;
+			color: #333;
+		}
+		// 这是个问题 , 目前先这么用吧 !!!;
+		&>p:nth-of-type(1),#citys>p:nth-of-type(3),#citys>p:nth-of-type(4){
+			font-weight: normal;
+		}
+		&>p:nth-of-type(2){
+			background: white;
+			font-size: .32rem;
+			font-weight: normal;
+			color: #e2941a;
+			height: .94rem;
+			line-height: .94rem;
+			padding-left: .5rem;
+		}
+		ul{
+			overflow: hidden;
+			width: 100%;	
+			li{
+				height: .94rem;
+				line-height: .94rem;
+				color: #838383;
+				font-size: .32rem;
+				width: 25%;
+				text-align: center;
+				float: left;
+				border-bottom: #ebebeb 1px solid;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+		}
 	}
 </style>
 

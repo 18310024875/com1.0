@@ -1,68 +1,50 @@
 <template>
+	<!-- Com根组件 中的 路由根组件 -->
 	<div id="app">
 		<app_header/>
 		<app_leftMenu/>
-		<div id="main">
+		<div class="appScroll">
 			<router-view></router-view>
 		</div>
 	</div>
 </template>
-
-<style scoped="#app" >
-	#main{
-	    width: 100%;height: calc(100% - 1rem);
-	    position: relative;
-	    overflow: auto;
-	}
-	.router-view{
-		width: 100%;height: 100%;
-		position: relative;
-	}
-</style>
-
 <script>
 	// 储存组件 用于通讯 ;
 	window.bus={} ;
 	// ajax
-	window.$get = function(url,callback){
+	window.$get = function(url,CALLBACK){
 		$.ajax({
 			url:'./src/json/'+url,
 			success:function(res){
-				callback(res)
+				CALLBACK(res)
 			}
 		})
 	}
 	// 下拉刷新 
-	window.$load = function(dom,callback){  
+	window.$load = function(dom,CALLBACK){  
 	    var obj = {once:false} ;
-	    callback() ;
-	      
-		// 卸载方法
-		obj.destroy = function(){ dom.onscroll=null ;obj=null ;return ;}
-		// 滚动方法
+	    CALLBACK() ;
+		obj.destroy = function(){ dom.onscroll=null ;obj=null ; return };
 		dom.onscroll=function(){
 			if(obj.once){
 			    if(dom.scrollTop+dom.offsetHeight+20>=dom.scrollHeight){
 			        console.log('_____loadReady____')
-			        callback() ;
+			        CALLBACK() ;
 			        obj.once = false ;
 			    }           
 			}
-		} // onscroll end 
+		};
 		return obj ;
 	};
 
 	// 根组件 ;
 	Com.exports = {
-		// 跟组件需要el属性 ;
-		el:'body',
-
 		components:{
-			app_header:'header',
-			app_leftMenu:'leftMenu',
+			app_header:'./components/header',
+			app_leftMenu:'./components/leftMenu',
 		},
-
 		data:{
+
 		},
 		watch:{
 
@@ -70,14 +52,21 @@
 		methods:{
 
 		},
-
-		updated(){
-
-		},
-		mounted:function () {
-
+		mounted(){
+			
 		}
 	}
-
-
 </script>
+<style lang="less">
+	#app{
+		width:100%;height: 100%;
+		overflow: hidden;
+		position: relative;
+		.appScroll{
+		    width: 100%;height: calc(100% - 1rem);
+		    position: absolute;
+		    left: 0;top: 1rem;
+		    overflow: auto;
+		}
+	}
+</style>

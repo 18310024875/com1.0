@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="x5-fullscreen" content="true">
+	<meta name="full-screen" content="yes">
+
+	<title> Com app </title>	
+	<link rel="stylesheet" type="text/css" href="./src/css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="./src/css/app.css">
+</head>
+
+<body></body>
+
+<!-- 外部js -->
+<script type="text/javascript" src="./src/js/rem.js"></script>
+<script type="text/javascript" src="./src/js/swiper.js"></script>
+
+<!-- 框架 -->
+	<!-- 依赖jquery -->
+	<script type="text/javascript" src="./Com.js/jquery.js"></script>
+	<!-- 本身 -->
+	<script type="text/javascript" src="./Com.js/com_var.js"></script>
+	<script type="text/javascript" src="./Com.js/com_tool.js"></script>
+	<script type="text/javascript" src="./Com.js/com_url.js"></script>
+	<script type="text/javascript" src="./Com.js/com_xhr_split.js"></script>
+	<script type="text/javascript" src="./Com.js/com_template.js"></script>
+	<script type="text/javascript" src="./Com.js/com_vfor.js"></script>
+	<script type="text/javascript" src="./Com.js/com_component.js"></script>
+	<script type="text/javascript" src="./Com.js/com_router.js"></script>
+
+<!-- 配置项 和 路由 -->
+<script type="text/javascript">
+
+	var routes = {
+		path:'app',
+		url:'./components/app',
+		children:[
+			{
+				path:'home',
+				url:'./components/home'
+			},
+			{
+				path:'movie',
+				url:'./components/movie',
+				children:[
+					{
+						path:'left',
+						url:'./components/movie_left'
+					},
+					{
+						path:'right',
+						url:'./components/movie_right'
+					}
+				]
+			},
+			{
+				path:'cinema',
+				url:'./components/cinema'
+			},
+			{
+				path:'shop',
+				url:'./components/shop'
+			},
+			{
+				path:'mine',
+				url:'./components/mine'
+			},
+			{
+				path:'card',
+				url:'./components/card'
+			},
+			{
+				path:'citys',
+				url:'./components/citys'
+			},
+			{
+				path:'detail',
+				url:'./components/detail'
+			}
+		],
+		beforeEnter:function(to , from){
+			try{
+				$('.appScroll').get(0).scrollTop = 0 ;
+			}catch(e){}
+		}
+	};
+
+	new Com({
+		// 路由配置 ;
+		routes:routes ,
+		template:'<div id="root" style="width:100%;height:100%;overflow:hidden">'+
+					'<router-view></router-view>'+
+				 '</div>',
+		el:'body'
+	});
+
+</script>
+</html>

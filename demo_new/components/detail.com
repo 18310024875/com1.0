@@ -1,7 +1,7 @@
 <template>
 
-	<div id="details">
-		<img v-bind:src="src" style="min-height:100px" />		
+	<div id="detail">
+		<img v-bind:src="imgSrc" style="min-height:100px" />		
 		<div class="part1"><span><span style="opacity:0">1</span></span>影片简介</div>
 		<p>
 			<span>导演 :</span>
@@ -32,46 +32,52 @@
 
 </template>
 
-<style scoped="#details">	
-	>img {
-	  width: 100%;
-	}
-	.part1 {
-	  font-size: .32rem ;
-	  margin: .28rem 0 .2rem 0;
-	}
-	.part1 span {
-	  display: inline-block;
-	  width: .3rem;
-	  background: #e4c89c;
-	  margin-right: .1rem;
-	}
-	p {
-	  text-indent: .4rem;
-	  line-height: .6rem;
-	}
-	p span {
-	  margin-right: 0.1rem;
-	}
-	.part2 {
-	  margin-top: .1rem;
-	  padding-left: .4rem;
-	  line-height: .38rem;
-	  padding-right: .4rem;
-	}
-	.bth {
-	  text-align: center;
-	  margin: .4rem auto;
-	  margin-bottom: 0;
-	  font-size: .28rem;
-	  width: 3.12rem;
-	  height: .72rem;
-	  line-height: .72rem;
-	  border: none;
-	  background-color: #fe8233;
-	  padding: 0;
-	  border-radius: .36rem;
-	  color: #fff;
+<style lang="less">
+	#detail{
+		padding-bottom: .6rem;
+		font-size: .24rem;
+		background: #f0f0f0;
+		color: #333;
+		&>img{
+			width: 100%;
+		}
+		.part1{
+			font-size: .32rem ;
+			margin: .28rem 0 .2rem 0;	
+			span{
+				display: inline-block;
+				width: .3rem;
+				background: #e4c89c;
+				margin-right: .1rem;				
+			}		
+		}
+		p{
+			text-indent: .4rem;
+			line-height: .6rem;	
+			span{
+				margin-right: 0.1rem;
+			}
+		}
+		.part2{
+			margin-top: .1rem;
+			padding-left: .4rem;
+			line-height: .38rem;
+			padding-right: .4rem;
+		}
+		.bth{
+			text-align: center;
+			margin: .4rem auto;
+			margin-bottom: 0;
+			font-size: .28rem;
+			width: 3.12rem;
+			height: .72rem;
+			line-height: .72rem;
+			border: none;
+			background-color: #fe8233;
+			padding: 0;
+			border-radius: .36rem;
+			color: #fff;			
+		}
 	}
 </style>
 
@@ -79,20 +85,18 @@
 
 	Com.exports = {
 		data:{
-			src:'1.jpg'
+			imgSrc:'1.jpg'
 		},
 		methods:{
 			toCinema:function(){
-				location.hash = 'cinema' ;
+				this.$router.push('/app/cinema');
 			}
 		},
 		mounted:function(){
-			window.ok = this ;
-
-			if( localStorage.detailImgUrl ){
-				this.src = localStorage.detailImgUrl ;
-				this.setState() ;
-			}
+			var url = this.$router.query.url ;
+				url = decodeURIComponent(url);
+				this.imgSrc = url ;
+				this.setState();
 		}
 	}
 </script>
