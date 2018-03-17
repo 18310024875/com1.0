@@ -75,7 +75,7 @@
 								// watch
 								if( this_.watch[each] ){
 									// watch 以字符串方式放入 watchCallbacks ;
-									var w = each+'("'+new_+'","'+old_+'")' ;
+									var w = each+'.call(this_,"'+new_+'","'+old_+'")' ;
 									this_.watchCallbacks.push(w);
 								}
 							}else{
@@ -133,7 +133,8 @@
 			router-view 控制路由 ;
 		 */
 		if( tagName=='router-view' && this.router ){
-			jqueryDOM = $("<section>");tree.class = [{value:'router-view'}];
+			jqueryDOM = $("<section>");
+			tree.class.unshift({value:'router-view'});
 			tree.routerView = true ;
 
 			var R = this_.router ;
@@ -515,7 +516,7 @@
 		
 		// 事件 全部触发 !!!! ;
 		this.EmitGO();
-
+		
 		// *** 克隆一份新的信息 ;
 		this.vnodeTree_DIFF = Com.clone( this.vnodeTree ) ; 
 
@@ -523,8 +524,7 @@
 		this.updated() ;
 		
 		// updated 后调用 watch ;
-		this.watchReady() ;
-
+		this.watchReady() ;		
 	};
 
 	componentMaker.prototype.hashChange = function(){
@@ -646,25 +646,29 @@
 		var its  = [] ; window.i = its ;
 		var cbs  = [] ; window.c = cbs ;
 		var vals = [] ; window.v = vals ;
+
 		componentMaker.prototype.EmitArr=function( it , cb , val ){
 			its.push(it)   ;
 			cbs.push(cb)   ;
 			vals.push(val) ;
 		} 	 
-		componentMaker.prototype.EmitGO=function(){
-
-		   for( var i=0,j=cbs.length ; i<j ; i++ ){
-		   		if( !its[i] ){
-		   			continue
-		   		};
-				var it  = its[i]  ;
-				var val = vals[i] ;
-
-				eval( "it"+cbs[i]+"(val)" ) ;
-			}
-			its.length  = 0 ;
-			cbs.length  = 0 ;
-			vals.length = 0 ;
+		componentMaker.prototype.EmitGO=function( CALLBACK ){
+//			requestAnimationFrame(function(){
+			   for( var i=0,j=cbs.length ; i<j ; i++ ){
+			   		if( !its[i] ){
+			   			continue
+			   		};
+					var it  = its[i]  ;
+					var val = vals[i] ;
+	
+					eval( "it"+cbs[i]+"(val)" ) ;
+				};
+				its.length  = 0 ;
+				cbs.length  = 0 ;
+				vals.length = 0 ;
+		
+//				CALLBACK();
+//			});
 		}
 	}());
 

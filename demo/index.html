@@ -32,7 +32,7 @@
 
 <!-- 配置项 和 路由 -->
 <script type="text/javascript">
-
+	//http://127.0.0.1:8020/Com%2010/demo/index.html#/app/home
 	var routes = {
 		path:'app',
 		url:'./components/app',
@@ -91,9 +91,7 @@
 	new Com({
 		// 路由配置 ;
 		routes:routes ,
-		template:'<div id="root" style="width:100%;height:100%;overflow:hidden">'+
-					'<router-view></router-view>'+
-				 '</div>',
+		template:'<router-view id="ROOT_DOM" style="width:100%;height:100%;overflow:hidden"></router-view>',
 		el:'body'
 	});
 

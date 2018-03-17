@@ -226,7 +226,7 @@
 						})
 					}
 					// prop
-					else if( key=='id'||key=='src'||key=='placeholder'||key=='value'||key=='selected'||key=='disabled' ){
+					else if( key=='id'||key=='src'||key=='placeholder'||key=='value'||key=='selected'||key=='disabled'){
 
 						var dom_key  = key ;
 						var data_key = value ;

@@ -26,15 +26,15 @@
     	this.path_detail = path_detail ;
 
     	// 默认定向路由 ;
-    	var hasDefault = false ;
-    	for(var k in path_detail){
-    		var each = path_detail[k] ;
-			if( each.default ){
-				hasDefault = true ;
-				this.push( each.linkPath );
-			}
-    	};
-    	!hasDefault ? error('没有设置默认路由') : null ;
+   //  	var hasDefault = false ;
+   //  	for(var k in path_detail){
+   //  		var each = path_detail[k] ;
+			// if( each.default ){
+			// 	hasDefault = true ;
+			// 	this.push( each.linkPath );
+			// }
+   //  	};
+   //  	!hasDefault ? error('没有设置默认路由') : null ;
 
     	var this_ = this ;
     	setTimeout(function(){
@@ -82,8 +82,11 @@
 		var arr = str.split('&') ;
 			arr.map(function(v){
 				if( v.includes('=') ){
-					var key   = v.split('=')[0] ;
-					var value = v.split('=')[1] ;
+					var key   = decodeURIComponent( v.split('=')[0] );
+					var value = decodeURIComponent( v.split('=')[1] );
+                        value=='true' ? value=true : null ;
+                        value=='false' ? value=false : null ;
+                        value=='undefined' ? value=undefined : null ;
 					params[ key ] = value ;
 				}
 			});	
@@ -96,7 +99,7 @@
         for(var k in obj ){
         	var v = obj[k]
         	if(!k||!v){ continue };
-        	arr.push(k+'='+v)
+        	arr.push( encodeURIComponent(k) +'='+ encodeURIComponent(v) );
         };
         return arr.join('&');  	
     };
